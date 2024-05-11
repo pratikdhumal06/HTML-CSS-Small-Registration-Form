@@ -11,12 +11,17 @@
           border-radius: 14px;
           width: 500px;
           margin-left: 500px;
-          
-          
+          }
+             #background{
+            background-image: url('Banner Background.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50px;
         }
     </style>
 </head>
 <body>
+    <div id="background">
     <h2 style="text-align:center;">Register form</h2>
     <div class="registerform">
     <form action="/Register Form Submit Text Show Message.html" method="post" name="Rfrom" onsubmit="return validateFrom"><!--action attributes use to tap to Register button store the backend data(store the API backend the data)-->
@@ -72,6 +77,7 @@
         <button type="reset">reset</button>
         <br><br>
     </form>
+    </div>
     </div>
 </body>
 
