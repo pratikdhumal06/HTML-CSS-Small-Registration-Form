@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registraction Form</title>
+    <style>
+        .registerform{
+          border: 2px solid rgb(26, 1, 1);
+          text-align: center;
+          border-radius: 14px;
+          width: 500px;
+          margin-left: 340px;
+          
+          
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Register form</h2>
+    <div class="registerform">
+    <form action="/Register Form Submit Text Show Message.html" method="post" name="Rfrom" onsubmit="return validateFrom"><!--action attributes use to tap to Register button store the backend data(store the API backend the data)-->
+        <br>                <!--Method Attributes use to front end to backend important data send use it--><!--get compare to most secure is post-->
+        <label>Fist Name: </label>
+        <input type="text" placeholder="Enter The Fist Name" reqired minlength="2" maxlength="10">
+        <br><br>
+        <label>Middel Name: </label>
+        <input type="text" placeholder="Enter The Middel Name" reqired minlength="2" maxlength="10">
+        <br><br>
+        <label>Last Name: </label>
+        <input type="text" placeholder="Enter The Last Name" reqired minlength="2" maxlength="10">
+        <br><br>
+        <lable>Username: </lable>
+        <input type="email" placeholder="Enter The email" required minlength="5" maxlength="90">
+        <br><br>
+        <label>Passwords: </label>
+        <input type="password" placeholder="Enter The Password" required minlength="4" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,0}">
+        <br><br>
+        <label>Agin Passwords: </label>
+        <input type="Password" placeholder="Enter The Same Password" required minlength="4" maxlentg="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,0}">
+        <br><br>
+        <label>Email: </label>
+        <input type="email" placeholder="Enter The Email" required>
+        <br><br>
+        <label>Address: </label>
+        <textarea rows="3" cols="20">Enter Address</textarea><!--rows and cols use increasing the text Area-->
+        <br><br>
+        <label>Date: </label>
+        <input type="date">
+        <br><br>
+        <label>Gender: </label>
+        <input type="radio" name="Gender" value="male">male <!--same name is all because select the one radio button not all-->
+        <input type="radio" name="Gender" value="female">female <!--value is used because backend Data Can Be The Saved In-->
+        <input type="radio" name="Gender" value="other">other
+        <br><br>
+        <label>Choose Option: </label>
+        <select>
+            <option> 1] Rural Area</option>
+            <option>2] Uraban Area</option>
+            <option>3] Other Area</option>
+        </select>
+        <br><br>
+        <label>Upload ID: </label>
+        <input type="file">
+        <br><br>
+        <input type="checkbox"><label>I agree above information are all correct</label>
+        <br><br>
+       
+       
+       
+        <button type="submit">Register</button>
+        <button type="reset">reset</button>
+        <br><br>
+    </form>
+    </div>
+</body>
+
+
+</html>
